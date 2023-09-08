@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="My APP" />
+  <title>Kamba Créditos</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1><i class="fa-solid fa-bank"></i> Kamba Créditos</h1>
+    </header>
+    <div class="container-form">
+      <form id="form">
+      <div class="steps">
+        <div class="step count-one">1</div>
+        <div class="line"></div>
+        <div class="step count-two">2</div>
+        <div class="line"></div>
+        <div class="step count-three">3</div>
+      </div>
+      <div class="count-steps step-one show">
+        <div class="form-item">
+          <label for="name">Seu Nome</label>
+          <input type="text" autofocus id="name" placeholder="ex: Mário Gabriel" required>
+        </div>
+        <div class="form-item">
+          <label for="phone">Telefone</label>
+          <input type="phone" id="phone" placeholder="ex: 922 000 222" required>
+        </div>
+        <div class="form-item buttons">
+        <button style="float:right;" type="button" class="next">Próximo</button>
+      </div>
+      </div>
+      <div class="count-steps step-two">
+        <div class="form-item">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="ex: seu@email.com" required>
+        </div>
+        <div class="form-item">
+          <label for="local">Morada</label>
+          <input type="text" id="local" placeholder="ex: Luanda" required>
+        </div>
+        <div class="form-item buttons">
+        <button type="button" class="prev">Voltar</button>
+        <button type="button" class="next">Próximo</button>
+      </div>
+      </div>
+      <div class="count-steps step-three">
+        <div class="form-item">
+          <label for="salario">Salário Mensal</label>
+          <input type="text" id="salario" placeholder="ex: 35.000 KZ" required>
+        </div>
+        <div class="form-item">
+          <label for="credito">Renda Pretendida</label>
+          <input type="text" id="credito" placeholder="Escolha uma" required>
+        </div>
+        <div class="form-item buttons">
+        <button type="button" class="prev">Voltar</button>
+        <button type="button" class="next submit">Enviar Solicitação</button>
+      </div>
+      </div>
+      <div id="msg">
+        PORFAVOR! Preencha os campo vázios.
+      </div>
+    </form>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="icons.js"></script>
+</body>
+</html>
